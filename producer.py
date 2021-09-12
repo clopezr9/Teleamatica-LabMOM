@@ -9,6 +9,7 @@ else:
     user = sys.argv[3]
     password = sys.argv[4]
 
+task = ''
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(dir_ip, port, '/', pika.PlainCredentials(user, password)))
 channel = connection.channel()
@@ -16,7 +17,7 @@ print("Runnning Producer Application...")
 print("Type in a task to be send")
 
 while True:
-    task = str(input('task -> '))
+    task = input('task -> ')
     if (len(task) != 0):
         channel.basic_publish(exchange='my_exchange', routing_key='test', body=task)
         print( task + 'send succesfully!')
