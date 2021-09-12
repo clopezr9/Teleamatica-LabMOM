@@ -15,5 +15,6 @@ channel = connection.channel()
 def callback(ch, method, properties, body):
     print('Task:' + body + 'is received')
 
+channel.basic_qos(prefetch_count=1)
 channel.basic_consume(queue="my_app", on_message_callback=callback, auto_ack=True)
 channel.start_consuming()
