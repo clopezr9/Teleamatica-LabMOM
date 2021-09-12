@@ -16,5 +16,6 @@ print("Runnning Producer Application...")
 print("Type in a task to be send")
 
 while True:
-    task = input()
+    task = input('task -> ')
     channel.basic_publish(exchange='my_exchange', routing_key='test', body=task)
+    print( task + 'send succesfully!')
