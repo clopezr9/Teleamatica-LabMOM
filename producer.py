@@ -20,4 +20,4 @@ while True:
     task = sys.stdin.readline()
     if (len(task) != 0):
         channel.basic_publish(exchange='my_exchange', routing_key='test', body=task)
-        print( task + 'send succesfully!')
+        print( 'task send succesfully!')
