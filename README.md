@@ -27,10 +27,10 @@ Luego de verificar esto se puede correr el consumer.py de la siguiente manera:
 Luego se puede correr el producer.py de la siguiente manera:
 <pre><code> $ python3 producer.py [DIR_IP] [PUERTO] [RabbitMQ_User] [RabbitMQ_Password]
 </code></pre>
-DIR_IP: La IP publica de la instancia en la que esta configurado el RabittMQ. <br />
-PUERTO: El puerto previamente seleccionado y abierto para TCP, generalmente 5672. <br />
-RabbitMQ_User: Usuario usado en la configuración del RabbitMQ. <br />
-RabbitMQ_Password: Contraseña usada en la configuración del RabbitMQ. <br />
+**DIR_IP:** La IP publica de la instancia en la que esta configurado el RabittMQ. <br />
+**PUERTO:** El puerto previamente seleccionado y abierto para TCP, generalmente 5672. <br />
+**RabbitMQ_User:** Usuario usado en la configuración del RabbitMQ. <br />
+**RabbitMQ_Password:** Contraseña usada en la configuración del RabbitMQ. <br />
 
 ## Referencias
 - https://www.rabbitmq.com/consumer-prefetch.html
