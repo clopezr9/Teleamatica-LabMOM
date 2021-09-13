@@ -1,7 +1,7 @@
 # Teleamatica-LabMOM
 ## Autor: Catalina López Roldán
 ## Descripción
-En este laboratorio se puede evidenciar el uso de un middleware para el envio de tareas indepenidentes a diferentes consumidores. Para esto usaremos un MOM llamado RabittMQ usando el protocolo de MAQP 0-9-1.
+En este laboratorio se puede evidenciar el uso de un middleware para el envio de tareas indepenidentes a diferentes consumidores teniendo en cuanta que las conexiones de los objetos pueden ser sincronicas o asincronicas. Para esto usaremos un MOM llamado RabittMQ usando el protocolo de MAQP 0-9-1 y python3. 
 
 ## Prerrequisitos
 - RabbitMQ instalado y configurado.
