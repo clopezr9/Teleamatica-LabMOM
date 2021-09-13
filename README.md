@@ -19,6 +19,8 @@ Ademas se debe installar la biblioteca de pika con el siguiente comando:
 </code></pre>
 
 ## Ejecución
+Para probar el proyecto se recomienda probarlo en AWS, para esto es necesario crear minimo 3 instancias, una donde se correra el producer.py y dos donde se correran los consumer.py.
+Para estas instancias se crea un grupo de seguridad donde se sugiere abrir los puertos TCP 5672 y 15672, además de un puerto ssh para poder acceder a las instancias.
 Para ejecutar el programa clonar este repositorio y los prerequisitos necesarios.
 Luego de verificar esto se puede correr el consumer.py de la siguiente manera:
 <pre><code> $ python3 consumer.py [DIR_IP] [PUERTO] [RabbitMQ_User] [RabbitMQ_Password]
